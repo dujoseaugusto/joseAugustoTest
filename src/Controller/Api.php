@@ -2,23 +2,21 @@
 
 namespace Controller;
 
-use Exception;
 use Models\Conect;
 use Models\Request_m;
-use PDO;
 use Service\Produtos;
 
 class Api extends Request_m{
     private $conexao;
     private $dados;
     public function __construct($rota)
-    {
+    {  
         parent::__construct();
         $this->rota = $rota;
         $this->conexao = Conect::abreConexao();
     }
 
-    public function cadastroProduto(){
+    public function cadastroProduto(){       
         $this->conexao->beginTransaction();
         try{
             $this->dados = json_decode($this->json,true);

@@ -31,7 +31,7 @@ RUN docker-php-ext-configure pdo_dblib --with-libdir=/lib/x86_64-linux-gnu
 
 RUN docker-php-ext-configure soap --enable-soap 
 
-RUN docker-php-ext-install gd intl  pdo_mysql pdo_pgsql mysqli zip pdo_dblib soap
+RUN docker-php-ext-install gd intl pdo pdo_mysql pdo_pgsql mysqli zip pdo_dblib soap
 
 RUN pecl install imagick-3.4.3
 

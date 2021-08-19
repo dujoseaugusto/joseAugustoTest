@@ -19,7 +19,7 @@
           <a class="nav-link" href="<?=URL_SITE?>cadastro" tabindex="-1" >Cadastro</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?=URL_SITE?>api" tabindex="-1" >Api</a>
+          <a class="nav-link" href="<?=URL_SITE?>apidoc" tabindex="-1" >Api</a>
         </li>
       </ul>
       <form class="d-flex" action="<?=URL_SITE?>" method="GET">
